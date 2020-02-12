@@ -26,37 +26,39 @@ azs = [&quot;us-east-2a&quot;,&quot;us-east-2b&quot;,&quot;us-east-2c&quot;]
 
 tags = {
 
-      Owner = &quot;user&quot;
+      Owner = XXXXX
 
-      Environment = &quot;dev&quot;
+      Environment = XXXXX
 
 }
 
 vpc\_tags = {
 
-  Name = &quot;xxxxx&quot;
+  Name = XXXXX
 
   }
 
 igw\_tags = {
 
-    Name = &quot;xxxxx&quot;
+    Name = XXXXX
 
   }
 
 public\_subnet\_tags = {
 
-      Name = &quot;public\_subnet-xxxxx&quot;
+      Name = XXXXX
 
     }
 
 private\_subnet\_tags = {
 
-        Name = &quot;private\_subnet-xxxxx&quot;
+        Name = XXXXX
 
       }
 
 }
+
+Note: You have to give several values to tag in all above tags
 
 ## License
 
