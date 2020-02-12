@@ -1,34 +1,63 @@
-# AWS VPC module for terraform
+**AWS VPC module for terraform**
 
-A simple VPC module for Terraform.
-## Usage
-module "vpc" {
-source = "https://github.com/fopingn/terraform-aws-vpc-basic.git"
-name = "vpc_name"
-cidr = "10.0.0.0/16"
-enable_dns_hostnames = true
-enable_dns_support = true
-public_subnet = "10.0.1.0/24"
-public_subnets = ["10.0.20.0/24","10.0.21.0/24","10.0.22.0/24"]
-private_subnets = ["10.0.120.0/24","10.0.121.0/24","10.0.122.0/24"]
-azs = ["us-east-2a","us-east-2b","us-east-2c"]
-tags = {  
-      Owner = "user"
-      Environment = "dev"
+**A simple VPC module for Terraform.**
+
+**Usage**
+
+module &quot;vpc&quot; {
+
+source = &quot;https://github.com/fopingn/terraform-aws-vpc-basic.git&quot;
+
+name = &quot;vpc\_name&quot;
+
+cidr = &quot;10.0.0.0/16&quot;
+
+enable\_dns\_hostnames = true
+
+enable\_dns\_support = true
+
+public\_subnet = &quot;10.0.1.0/24&quot;
+
+public\_subnets = [&quot;10.0.20.0/24&quot;,&quot;10.0.21.0/24&quot;,&quot;10.0.22.0/24&quot;]
+
+private\_subnets = [&quot;10.0.120.0/24&quot;,&quot;10.0.121.0/24&quot;,&quot;10.0.122.0/24&quot;]
+
+azs = [&quot;us-east-2a&quot;,&quot;us-east-2b&quot;,&quot;us-east-2c&quot;]
+
+tags = {
+
+      Owner = &quot;user&quot;
+
+      Environment = &quot;dev&quot;
+
 }
-vpc_tags = {
-  Name = "xxxxx"
+
+vpc\_tags = {
+
+  Name = &quot;xxxxx&quot;
+
   }
-igw_tags = {
-    Name = "xxxxx"
+
+igw\_tags = {
+
+    Name = &quot;xxxxx&quot;
+
   }
-public_subnet_tags = {
-      Name = "public_subnet-xxxxx"
+
+public\_subnet\_tags = {
+
+      Name = &quot;public\_subnet-xxxxx&quot;
+
     }
-private_subnet_tags = {
 
-        Name = "private_subnet-xxxxx"
+private\_subnet\_tags = {
+
+        Name = &quot;private\_subnet-xxxxx&quot;
+
       }
+
 }
+
 ## License
+
 MIT
